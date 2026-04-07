@@ -10,12 +10,13 @@ import { GreetQuoteFunc05, GreetQuoteClass05 } from '../lesson-steps/04-dataflow
 import { GreetQuoteFunc06, GreetQuoteClass06 } from '../lesson-steps/04-dataflow/components/06-state-lifting';
 import { GreetQuoteFunc07, GreetQuoteClass07 } from '../lesson-steps/04-dataflow/components/07-events-change-state';
 import { GreetQuoteFunc08, GreetQuoteClass08 } from '../lesson-steps/04-dataflow/components/08-events-change-state-exAnsw';
+import { WrapperComponent, NestedComponent } from '../lesson-steps/04-dataflow/components/09-nested-components';
 
 //Using simple components
 export function App04_01() {
   return (
     <>
-      <GreetingsFunc01/>
+      <GreetingsFunc01 timeOfDay="hello"/>
       <GreetingsFunc01a name="Martin"/>
     </>
     );}
@@ -23,7 +24,7 @@ export function App04_01() {
 export function App04_02() {
   return (
     <>
-      <QuoteListFunc02a title="God Morning" quotes={[{quote: "Hello World", author: "Martin"}]}/>
+      <QuoteListFunc02a title="God Morning" quotes={[{quote: "Hello World", author: "Martin"}, {quote: "Goodbye", author: "Martin"}]}/>
     </>
     );}
     
@@ -85,3 +86,15 @@ export function App04_08() {
     <GreetQuoteFunc08/>
     </>
     );}
+
+
+export function App04_09() {
+
+  return (
+    <>
+    <WrapperComponent greeting="Hello from App04_09">
+        <NestedComponent/>
+        <NestedComponent/>
+    </WrapperComponent>
+    </>
+  );}

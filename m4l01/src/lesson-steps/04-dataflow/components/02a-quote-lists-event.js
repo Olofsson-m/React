@@ -13,12 +13,17 @@ export function QuoteListFunc02a(props) {
         if (props.onClick)
             props.onClick(e);
     }
+
+    const onClickLi = (e) => {
+        console.log(`Li idx clicked: ${e.target.dataset.idx}`);
+
+    }
     return (
         <>
         <h1 onClick={onClick}>{title}</h1>
         <ul>
             {
-            quotes.map(q => <li>{q.quote} {q.author}</li>)
+            quotes.map((q, index) => <li key={index} data-idx={index} onClick={onClickLi}>{q.quote} {q.author}</li>)
             }
         </ul>
         </>

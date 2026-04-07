@@ -49,3 +49,19 @@ for both Func and Class components:
 
 */
 
+/* Exercise in your own Cards Application
+for both Func and Class components:
+
+1. Add a Click event handler to the jsx img tag of a card. A click in a card is registered by printed out to the console
+
+2. Add state so the total number of clicks is kept as a state in the component.
+   - the total should presented in browser as part of a <h1> header tag for all cards
+   Hint: you can use a state clickCount and initialize the state it as:
+   		func comp - const [clickCount, setClickCount] = useState (0);
+		class comp - this.state = {clickCount: 0};  
+
+3. Include a seedGenerator and add a click event handler to the jsx p tag presenting the description of the card. 
+   - each time you click on p tag a new bogus latin sentence should be presented in the description of the card
+
+*/
+

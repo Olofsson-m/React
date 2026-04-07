@@ -9,6 +9,7 @@ export function TextCounterFunc01(props) {
       <div>
       <textarea defaultValue={text} />
       <h3>{text.length}</h3>
+      <p>{text}</p>
       </div>
     </>
   )
@@ -25,6 +26,7 @@ export class TextCounterClass01 extends Component {
       <div>
       <textarea defaultValue={text} />
       <h3>{text.length}</h3>
+      <p>{text}</p>
       </div>
     </>
     )

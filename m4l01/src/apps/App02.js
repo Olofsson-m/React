@@ -11,7 +11,7 @@ export function App02_01() {
     <>
     {//In a function component use props as as parameter
     }
-    <Greetings name="Martin" names={["Martin", "Sara", "Idefix"]}/>
+    <PropsFunc01 name="Hemronie" friend="Sara"/>
     </>
     );}
 

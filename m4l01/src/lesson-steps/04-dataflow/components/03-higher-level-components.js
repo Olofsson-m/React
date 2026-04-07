@@ -22,3 +22,9 @@ export class GreetQuoteClass03 extends Component {
     ) }
 }
 
+/* Exercise:
+  In your own project break out the card rendering part of Cards into a separate component. 
+  Then use that component in Cards to render the cards. 
+  Cards is now a higher order component that uses the card component to render the cards.
+*/
+

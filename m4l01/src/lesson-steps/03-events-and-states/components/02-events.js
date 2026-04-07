@@ -7,7 +7,7 @@ export function TextCounterFunc02(props) {
   const text = props.text || "";
 
     //Eventhandler, in func component
-  const onTextChange = (e) => {
+  const onTextChange = e => {
       console.log(`Func component text changed: ${e.target.value}`)
     }
 
