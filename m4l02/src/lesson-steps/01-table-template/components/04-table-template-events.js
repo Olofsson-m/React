@@ -13,7 +13,7 @@ export function TableTemplate04(props) {
 
         //pass on the id in the event lifting
         e.rowid = e.currentTarget.dataset.rowid;
-        if (props?.onClickHeader) props?.onClickRow(e);
+        if (props?.onClickRow) props?.onClickRow(e);
       }
       
   return (

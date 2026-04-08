@@ -25,25 +25,6 @@ export function ReadWebApiFunc07() {
   Specific dependencies: The effect runs when any of the specified dependencies change. useEffect(() => { // Runs on the first render and whenever 'prop' or 'state' changes }, [prop, state]);
 */
 
-
- /*
-  useEffect(() => {
-      //equvalent to componentDidMount
-      console.log('componentDidMount');
-
-      //package the async in an async iffy
-      //Immediately-Invoked Function Expressions (IIFE), pronounced "iffy"
-      //(async () => {})()
-      (async () => {
-        const service = new musicService(`https://music.api.public.seido.se/api`);
-        const info = await service.readInfoAsync();
-        setWapiInfo(info);
-      })();}
-
-  No dependency array: The effect runs after every render. useEffect(() => { // Runs on every render });
-  Empty dependency array: The effect runs only once after the initial render. useEffect(() => { // Runs only on the first render }, []);
-  Specific dependencies: The effect runs when any of the specified dependencies change. useEffect(() => { // Runs on the first render and whenever 'prop' or 'state' changes }, [prop, state]);
-*/
   const onClick = async () => {
 
     const info = await service.readInfoAsync();
@@ -51,16 +32,16 @@ export function ReadWebApiFunc07() {
     console.log('Clicked refesh button in func component');
   }
 
-  return (
-    <div>
+    return (
+      <div>
       <h1>WebApi info</h1>
         <ul>
-          <li>nrSeededMusicGroups: {wapiInfo?.db?.nrSeededMusicGroups} </li>
-          <li>nrUnseededMusicGroups: {wapiInfo?.db?.nrUnseededMusicGroups} </li>
-          <li>nrSeededAlbums: {wapiInfo?.db?.nrSeededAlbums} </li>
-          <li>nrUnseededAlbums: {wapiInfo?.db?.nrUnseededAlbums} </li>
-          <li>nrSeededArtists: {wapiInfo?.db?.nrSeededArtists} </li>
-          <li>nrUnseededArtists: {wapiInfo?.db?.nrUnseededArtists} </li>
+          <li>nrSeededMusicGroups: {wapiInfo?.item?.db?.nrSeededMusicGroups} </li>
+          <li>nrUnseededMusicGroups: {wapiInfo?.item?.db?.nrUnseededMusicGroups} </li>
+          <li>nrSeededAlbums: {wapiInfo?.item?.db?.nrSeededAlbums} </li>
+          <li>nrUnseededAlbums: {wapiInfo?.item?.db?.nrUnseededAlbums} </li>
+          <li>nrSeededArtists: {wapiInfo?.item?.db?.nrSeededArtists} </li>
+          <li>nrUnseededArtists: {wapiInfo?.item?.db?.nrUnseededArtists} </li>
         </ul>
         <button onClick={onClick}>Refresh</button>
     </div>

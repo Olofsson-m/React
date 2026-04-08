@@ -9,10 +9,10 @@ const tableHeaders = ["first name", "last name", "city", "country"];
 const _seeder = new seedGenerator();
 
 //Show how session storage can be used to not generate new randoms at every refresh
-if (!sessionStorage.persons)
-    sessionStorage.persons = JSON.stringify(new Person().seedMany(_seeder,1000));
+// if (!sessionStorage.persons)
+//     sessionStorage.persons = JSON.stringify(new Person().seedMany(_seeder,1000));
 
-const _persons = JSON.parse(sessionStorage.persons);
+const _persons = new Person().seedMany(_seeder,1000);// JSON.parse(sessionStorage.persons);
 
 
 export function UsingTableTemplate06(props) {

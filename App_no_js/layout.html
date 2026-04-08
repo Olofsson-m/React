@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first application</title>
+
+    <link rel="stylesheet" href="./assets/css/colors-fonts.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+</head>
+<body>
+    <div class="GridPage">
+        <div class="GridItemMain">
+
+        </div>
+        <div class="GridItemSideBarLeft">
+            <div class="MenuWrap">
+                <a href="./about.html" class="ListItem">Home</a>
+                <a href="./images.html" class="ListItem">Album</a>
+                <a href="./cards.html" class="ListItem">Cards</a>
+                <a href="./table.html" class="ListItem">Table</a>
+                <a href="./layout.html" class="LastItem">Layout</a>
+            </div>
+        </div>
+        <div class="GridItemHeader">My Application</div>
+        <div class="GridItemFooter">(c) Martin</div>
+    </div>
+</body>
+</html>
+
+<!--
+Exercise:
+1. Create a new React application
+2. Create a new component called Layout and copy the content of this file into the render method of the component.
+   Convert the HTML code to JSX syntax (e.g. class -> className, etc.)
+3. Create a new component called Page and render the Layout component in it.
+
+4. Import the Page component into the App component and render it.
+
+5. Create a component caller About and copy the content of about.html into the render method of the component. 
+   Convert the HTML code to JSX syntax.
+
+6. Modify the Layout component to render children in the GridItemMain div. 
+   Use the Layout component in the Page component to wrap the About component.
+
+7. Create a new component called Images and copy the content of images.html into the render method of the component. 
+   Convert the HTML code to JSX syntax.
+
+8. Modify the Layout component in the Page component to wrap the Images component.
+
+9. Use event handling/lifting and state management/lifting to shift between the About and Images component 
+   when clicking on the corresponding menu item in the sidebar.
+   Hint: use data-xx attribute to identify the menu item and use it in the event handler to determine which component to render.
+
+-->

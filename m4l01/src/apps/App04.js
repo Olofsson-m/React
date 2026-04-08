@@ -32,9 +32,9 @@ export function App04_02() {
 export function App04_03() {
   return (
     <>
-    <GreetQuoteFunc03 name="Nils"/>
-    <GreetQuoteFunc03 name="Gustav"/>
-    <GreetQuoteFunc03 name="Elin"/>
+    <GreetQuoteFunc03/>
+    <GreetQuoteFunc03 name="Gustav" quotes={[{quote: "Hello World", author: "Martin"}, {quote: "Goodbye", author: "Martin"}]}/>
+    <GreetQuoteFunc03 name="Elin" />
     </>
     );}
 
@@ -66,7 +66,7 @@ export function App04_05() {
 export function App04_06() {
   return (
     <>
-    <GreetQuoteFunc06/>
+    <GreetQuoteFunc06 timeOfDay="afternoon"/>
     </>
     );}
 
