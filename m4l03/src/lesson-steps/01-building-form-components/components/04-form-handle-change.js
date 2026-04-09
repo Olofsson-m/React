@@ -127,10 +127,10 @@ export function FormHandleChange04(props) {
 
 
 /* Exercise
-1. Modify the animal form to a controlled form by 
-  - add props to allow you to change the properties of an animal
-  - add animal as a state
-  - set value in the <input> tags
-  - adding a change handler
-  - add an onUndo handler
+1. Modify the animal controlled form that handles changes. Make sure you have
+  - props.animal to allow you to change the properties of an animal
+  - animal as a state
+  - value in the <input> tags
+  - a change handler
+  - an onUndo and onSave handler
 */

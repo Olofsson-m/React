@@ -76,3 +76,8 @@ export function FormControlled03(props) {
     </>
   )
 }
+
+/* Exercise
+1. Make a controlled form that allows the user to set the details of an animal. 
+   That is name, type, age,
+*/

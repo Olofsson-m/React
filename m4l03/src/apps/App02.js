@@ -1,6 +1,6 @@
 import {UseFormInPage01} from '../lesson-steps/02-form-inpage-modal/components/01-use-form-in-page';
 import {UseBootstrapModal02} from '../lesson-steps/02-form-inpage-modal/components/02-bootstrap-modal';
-import {UseFormInModal04} from '../lesson-steps/02-form-inpage-modal/components/04-use-form-in-modal';
+import {UseFormInModal03a} from '../lesson-steps/02-form-inpage-modal/components/03a-use-form-in-modal';
 
 //https://legacy.reactjs.org/docs/strict-mode.html#detecting-unexpected-side-effects
 //You will notice React in Dev mode mounts the components twice.
@@ -23,7 +23,7 @@ export function App02_02() {
 export function App02_03() {
   return (
     <>
-      <UseFormInModal04/>
+      <UseFormInModal03a/>
     </>
   );}
   

@@ -43,9 +43,7 @@ export function UseFormInPage01() {
 
   /* Exercise
   1. Create a component with animal details that uses your animal form component with validation to update the details
-  2. Create a component that shows an animal list (no bootstrap instead just <ul> and <li>) that uses your animal form component with validation 
-     to add animals to the list
-  3. Modify code in 2 so the list uses bootstrap
-  4. Modify component in 2 so the form to add animals into the list is through a Modal.
+  2. Create another component that shows an animal list (no bootstrap instead just <ul> and <li>) that uses your animal 
+     form component with validation to add animals to the list
   */
 

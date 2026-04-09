@@ -5,7 +5,7 @@ import {seedGenerator } from '../../../services/seido-helpers';
 import Person from '../../../models/person';
 import {FormInModal03} from './03-form-in-modal';
 
-export function UseFormInModal04() {
+export function UseFormInModal03a() {
 
   const _seeder = new seedGenerator();
   const p = new Person().seed(_seeder);
@@ -49,3 +49,9 @@ export function UseFormInModal04() {
     </>
   );
 }
+
+
+  /* Exercise
+  1. create a modal component that allows you to enter animal details 
+  2. create another component that uses the modal component to add animals into a list of animals.
+  */
